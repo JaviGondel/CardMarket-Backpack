@@ -116,6 +116,7 @@ class UsersController extends Controller
             if($req->has('email')) {
 
                 $user = User::where('email', $email)->first();
+                $newPass = "";
 
                 if ($user) {
 
